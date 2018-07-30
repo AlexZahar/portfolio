@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran%7CMerienda" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="DESCRIPTION" content="Personal portfolio using HTML and CSS">
+  <meta name="author" content="George Alexandru Zahar">
+  <link rel="shortcut icon" href="img/fireball1.png" type="image/png">
+
+    </head>
+    <body>
+      <header>
+
+
+
+        <a href="index.html" class="header-brand">Zahar</a>
+        <nav>
+          <ul>
+            <li><a href="#" id="aboutme">About me <img src="ICONS/dropdownmenu.png" alt=""> </a>
+              <ul>
+                <li><a href="https://www.youtube.com/channel/UCO4WRoRrXREcpR8zy6X6Q5Q?disable_polymer=true"target="_blank">YouTube Page</a></li>
+                <li><a href="https://www.facebook.com/zahar.alex.7?ref=bookmarks"target="_blank">Facebook Page</a></li>
+                <li><a href="https://www.linkedin.com/in/zahar-george-alexandru-179082147/"target="_blank">linkedIn Page</a></li>
+              </ul>
+            </li>
+              <li><a href="ng-gallery/gallery/src/index.html">Gallery</a></li>
+                <li><a href="http://localhost/loginsystem/"target="_blank">Sign Up</a></li>
+              </ul>
+              <a href="casesgrid.html" class="header-cases">Projects</a>
+
+        </nav>
+
+      </header>
+      <main>
+        <section class="index-banner">
+          <div class="vertical-center">
+            <h2>Welcome to my personal<br>WebPage</h2>
+            <h1>This is my portfolio.</h1>
+        </div>
+      </section>
+      <div class="wrapper">
+      <section class="index-links">
+      <a href="casesgrid.html">
+          <div class="index-boxlink-square">
+             <h3>Cases</h3>
+           </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="index-boxlink-rectangle">
+              <h3>Portfolio</h3>
+            </div>
+          </a>
+        <a href="zahar.html">
+           <div class="index-boxlink-square">
+              <h3>Zahar</h3>
+            </div>
+          </a>
+        <a href="../index.php">
+          <div class="index-boxlink-rectangle">
+              <h3>YouTube Channel</h3>
+            </div>
+          </a>
+        <a href="http://localhost/loginsystem/"target="_blank">
+           <div class="index-boxlink-square">
+              <h3>Sign Up</h3>
+            </div>
+          </a>
+        <a href="contact.html">
+            <div class="index-boxlink-square">
+            <h3>Contact</h3>
+      </div>
+          </a>
+            </section>
+          </div>
+    <div class="wrapper">
+          <div  id="map"></div>
+            <script>
+              function initMap() {
+                var location = {lat: 45.438, lng: 28.049};
+                var map = new google.maps.Map(document.getElementById("map"),
+              { zoom: 6,
+                center: location
+              });
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map
+              });
+              }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6LkEE4bQkLw_B1BDNeDuwQbWHhlxMcHU&callback=initMap">
+            </script>
+</div>
+      </main>
+      <div class="wrapper">
+    <footer>
+      <ul class="footer-links-main">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <ul class="footer-links-cases">
+        <li><p>Latest Cases</li>
+        <li><a href="#">MALING SHAOLIN - WEB DEVELOPMENT</a></li>
+        <li><a href="#">EXCELLENTO - WEB DEVELOPMENT, SEO</a></li>
+        <li><a href="#">MMTUTS - YOUTUBE CHANNEL</a></li>
+        <li><a href="#">WELTEC - VIDEO PRODUCTION</a></li>
+      </ul>
+      <div class="footer-sm">
+        <a href="https://www.linkedin.com/in/zahar-george-alexandru-179082147/" target="_blank">
+        <img src="icons/linkedin-logo-social-media-32bbb7527ec4895f-64x64.png" alt="fb logo">
+        </a>
+        <a href="https://www.facebook.com/zahar.alex.7?ref=bookmarks" target="_blank">
+        <img src="icons/facebook-logo-social-media-3b09c743391a3930-64x64.png" alt="insta logo">
+        </a>
+        <a href="https://twitter.com/zaharalex1" target="_blank">
+        <img src="icons/twitter-logo-social-media-36cdcc24eeefe13d-64x64.png" alt="twitter logo">
+        </a>
+
+        </div>
+
+      </footer>
+    </div>
+
+
+        <!--<img class="img-alarma" src="img/patru.jpg" alt="Laser alarm">-->
+        <!--div class="img-alarma"></div>-->
+        <!--<video class="Video" src="vids/alarma.mp4" controls>-->
+        <!--<div class="videowrapper">
+          <iframe src="https://www.youtube.com/embed/OOy764mDtiA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>-->
+
+    </body>
+    </html>

@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden;
 
   &.show {
@@ -88,12 +88,12 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/pozaa.png);
+      background-image: url(../img/IMG_0407.jpg);
       border-radius: 50%;
       border: solid 3px $secondary-color;
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+      background-position: initial;
+      background-size: cover;
     }
   }
 

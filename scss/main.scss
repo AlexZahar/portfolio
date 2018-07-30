@@ -70,11 +70,26 @@ main {
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
+  /*.bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+  }
+  */
+  .vidwrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .case-vid video {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
   .bio {
     grid-area: bio;
@@ -98,6 +113,13 @@ main {
   }
 }
 //work/projects
+.descriereproiect {
+  color: $secondary-color;
+  font-weight: bolder;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 15px;
+}
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -105,10 +127,11 @@ main {
 
   img {
     width: 100%;
+
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.4;
       border-color: $secondary-color;
       @include easeOut;
     }
