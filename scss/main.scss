@@ -64,9 +64,9 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-areas:
-    'bioimage bio bio'
+    'case-vid bio bio'
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
@@ -83,13 +83,14 @@ main {
   }
   */
   .vidwrapper {
+    grid-area: vidwrapper;
     width: 100%;
     height: 100%;
   }
   .case-vid video {
+    grid-area: case-vid;
     width: 100%;
     height: 100%;
-    display: block;
   }
   .bio {
     grid-area: bio;
@@ -191,6 +192,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
+
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;

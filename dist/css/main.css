@@ -162,8 +162,8 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-gap: 20px;
+  grid-template-areas: 'case-vid bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   /*.bio-image {
     grid-area: bioimage;
@@ -178,12 +178,13 @@ main {
   }
   */ }
   .about-info .vidwrapper {
+    grid-area: vidwrapper;
     width: 100%;
     height: 100%; }
   .about-info .case-vid video {
+    grid-area: case-vid;
     width: 100%;
-    height: 100%;
-    display: block; }
+    height: 100%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1, 5rem; }
@@ -264,7 +265,19 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-info {
+    grid-template-areas: 'vidwrapper' 'bio' 'job1' 'job2' 'job3';
+    margin-left: -5px;
+    grid-template-columns: 1fr; }
+  .vidwrapper {
+    grid-area: vidwrapper;
+    width: 100%;
+    height: 100%; }
+  .case-vid video {
+    grid-area: case-vid;
+    width: 100%;
+    height: 100%; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -303,18 +316,32 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: 'vidwrapper' 'bio' 'job1' 'job2' 'job3';
+    margin-left: -5px;
     grid-template-columns: 1fr; }
-    .about-info .vidwrapper {
-      width: 100%;
-      height: 100%; }
-    .about-info .case-vid video {
-      width: 100%;
-      height: 100%;
-      display: block; }
+  .vidwrapper {
+    grid-area: vidwrapper;
+    width: 100%;
+    height: 100%; }
+  .case-vid video {
+    grid-area: case-vid;
+    width: 100%;
+    height: 100%; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 410px) {
+  .about-info {
+    grid-template-areas: 'vidwrapper' 'bio' 'bio' 'bio' 'bio';
+    margin-left: -30px;
+    grid-template-columns: 1fr; }
+  .vidwrapper {
+    grid-area: vidwrapper;
+    width: 100%;
+    height: 100%; }
+  .case-vid video {
+    grid-area: case-vid;
+    width: 100%;
+    height: 100%; }
   .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
@@ -323,3 +350,17 @@ main {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 320px) {
+  .about-info {
+    grid-template-areas: 'vidwrapper' 'bio' 'bio' 'bio' 'bio';
+    margin-left: -55px;
+    grid-template-columns: 1fr; }
+  .vidwrapper {
+    grid-area: vidwrapper;
+    width: 100%;
+    height: 100%; }
+  .case-vid video {
+    grid-area: case-vid;
+    width: 100%;
+    height: 100%; } }
