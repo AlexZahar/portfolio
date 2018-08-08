@@ -114,6 +114,7 @@
       'bio';
     margin-left: -30px;
     grid-template-columns: 1fr;
+    justify-items: start;
   }
   .vidwrapper {
     grid-area: vidwrapper;
