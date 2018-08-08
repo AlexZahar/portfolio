@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "description": "Responsive portfolio website",
-  "homepage": "https://dadicema.github.io/Modern_portfolio/",
+  "homepage": "https://dadicema.github.io/portfolio/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
